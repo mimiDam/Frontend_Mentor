@@ -1,0 +1,214 @@
+@media screen and (max-width: 420px) {
+  .navbar {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+  }
+  .rightSide {
+    display: block;
+  }
+  .menu {
+    display: block;
+    margin-right: 0;
+  }
+  .menu li {
+    padding: 0;
+    font-size: 8px;
+    padding: 15px 3px;
+  }
+
+  .gitButton {
+    padding: 7px 12px;
+  }
+  .gitButton p {
+    font-size: 11px;
+  }
+  .underManu {
+    padding-left: 20px;
+  }
+  .challange {
+    padding: 15px 5px;
+  }
+  .challange p {
+    font-size: 12px;
+  }
+  .container {
+    max-width: 100%;
+  }
+  .leftSide1 {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .frontImg {
+    padding: 20px 10px;
+  }
+  .twoButtons {
+    margin-left: 10px;
+  }
+  .firstButton {
+    font-size: 12px;
+    padding: 5px 15px;
+  }
+  .secondButton {
+    font-size: 12px;
+    padding: 5px 15px;
+  }
+  .rightSide1 {
+    display: block;
+    width: 100%;
+    padding: 20px 10px;
+  }
+  .crossImg {
+    width: 10%;
+  }
+  .crossText p {
+    font-size: 11px;
+  }
+  .startChallange {
+    font-size: 12px;
+  }
+  .leftText {
+    display: block;
+    width: 95%;
+    margin: 20px 10px;
+  }
+  .leftText p {
+    font-size: 13px;
+  }
+  .startChallange1 {
+    padding: 5px 30px;
+    font-size: 12px;
+  }
+  .rightText {
+    display: block;
+    width: 100%;
+    margin: 40px 0px;
+  }
+  .rightText li {
+    font-size: 13px;
+  }
+  .h3text {
+    font-size: 24px;
+  }
+  .faqHeading h3 {
+    font-size: 12px;
+  }
+  .question {
+    width: 90%;
+  }
+  .question p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .questionRow {
+    width: 80%;
+  }
+  .plus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .backgroundImg {
+    padding: 0px;
+    min-height: 520px;
+  }
+  .backgroundImg h2 {
+    margin: 0 auto;
+  }
+  .backgroundImg h4 {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .inputHolder {
+    display: block;
+  }
+  input {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    padding: 6px;
+  }
+  .inputButton {
+    margin: 0 auto;
+  }
+  .subscribe {
+    padding: 30px 0;
+  }
+  .subscribeText {
+    display: block;
+    width: 95%;
+    margin: 30px 10px;
+  }
+  .subscribeText h2 {
+    font-size: 22px;
+  }
+  input[type="checkbox"] {
+    margin: auto 5px;
+  }
+  label {
+    font-size: 14px;
+  }
+  .input1 {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  .inputAlign1 {
+    width: 35%;
+  }
+  .subscribeImg {
+    display: none;
+    width: 100%;
+  }
+  .threeColumn {
+    display: inline-block;
+    width: 100%;
+    padding: 0 10px;
+  }
+  .intro1 {
+    display: inline-block;
+    width: 90%;
+  }
+  .intro1 h2 {
+    padding: 50px 0 20px 0;
+    font-size: 11px;
+  }
+  .intro1 p {
+    font-size: 11px;
+    margin: 10px auto;
+  }
+  .linkItem {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .linkItem a {
+    font-size: 13px;
+  }
+  .socialMedia {
+    width: 90%;
+    justify-content: left;
+    margin: 40px 10px;
+  }
+  .socialMedia a {
+    width: 40px;
+    height: 40px;
+  }
+  .lastPart {
+    width: 90%;
+    display: block;
+    margin: 20px;
+  }
+  .copyRight {
+    display: block;
+  }
+  .copyRight span {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 10px;
+  }
+  .terms a {
+    font-size: 11px;
+  }
+}

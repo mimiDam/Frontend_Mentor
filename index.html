@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/myStyle.css" />
+    <link rel="stylesheet" media="screen and (max-width: 420px)" href="css/mobile.css">
+    <title>Frontend Mentor</title>
+  </head>
+  <body>
+    <!--Header section-->
+    <header class="navbar">
+      <div class="logo">
+       <a href="#"><svg width="175" height="25" xmlns="http://www.w3.org/2000/svg"><g fill-rule="nonzero" fill="none"><g fill="#1C2122"><path d="M43.174 3.884a.278.278 0 0 1-.205.074h-6.455c-.062 0-.094.031-.094.093v3.951c0 .062.031.093.094.093h4.396c.086 0 .154.025.203.074.05.05.074.118.074.204v.983a.274.274 0 0 1-.074.204.271.271 0 0 1-.203.074h-4.396c-.062 0-.094.031-.094.093v5.398a.272.272 0 0 1-.074.204.271.271 0 0 1-.203.074h-1.225a.276.276 0 0 1-.205-.074.275.275 0 0 1-.073-.204V2.695c0-.086.024-.154.073-.204a.28.28 0 0 1 .205-.074h8.051c.087 0 .154.025.205.074a.28.28 0 0 1 .074.204v.983a.28.28 0 0 1-.074.206zM50.168 6.073c.135.074.186.192.148.353l-.26 1.206c-.014.124-.074.186-.186.186a.458.458 0 0 1-.148-.019 1.989 1.989 0 0 0-.631-.093 1.57 1.57 0 0 0-.279.019c-.581.025-1.061.226-1.438.604-.377.377-.565.869-.565 1.475v5.324a.272.272 0 0 1-.074.204.275.275 0 0 1-.204.074h-1.225a.271.271 0 0 1-.203-.074c-.051-.049-.074-.117-.074-.204V6.24c0-.086.023-.154.074-.203a.271.271 0 0 1 .203-.074h1.225c.086 0 .154.024.204.074.05.049.074.117.074.203v.854c0 .05.009.078.028.084.018.006.039-.01.064-.047.557-.841 1.311-1.261 2.264-1.261.372 0 .706.067 1.003.203zM53.701 14.858c-.674-.464-1.147-1.11-1.419-1.939-.223-.667-.334-1.422-.334-2.263 0-.878.104-1.62.315-2.227.271-.816.748-1.456 1.428-1.92.681-.464 1.49-.695 2.431-.695.891 0 1.667.231 2.329.695.66.464 1.134 1.098 1.418 1.901.223.631.334 1.373.334 2.227 0 .865-.111 1.626-.334 2.281-.271.829-.742 1.476-1.409 1.939-.668.464-1.454.695-2.356.695-.928.001-1.729-.23-2.403-.694zm3.701-1.262c.371-.278.637-.671.798-1.179.136-.47.204-1.051.204-1.743 0-.692-.062-1.268-.186-1.726-.161-.507-.427-.899-.798-1.178-.371-.279-.823-.418-1.354-.418-.508 0-.945.14-1.316.418-.371.278-.638.671-.799 1.178-.136.433-.203 1.008-.203 1.726 0 .717.067 1.299.203 1.743.148.508.412.9.789 1.179.377.279.832.417 1.363.417a2.1 2.1 0 0 0 1.299-.417zM69.609 6.713c.594.588.891 1.382.891 2.384v6.029a.276.276 0 0 1-.074.204.276.276 0 0 1-.205.074h-1.224a.272.272 0 0 1-.204-.074.272.272 0 0 1-.074-.204V9.45c0-.618-.18-1.119-.538-1.503-.358-.383-.835-.575-1.429-.575-.531 0-.98.158-1.345.474-.365.315-.579.739-.64 1.271v6.011a.276.276 0 0 1-.074.204.276.276 0 0 1-.205.074h-1.225a.271.271 0 0 1-.203-.074.272.272 0 0 1-.074-.204V6.24c0-.086.024-.154.074-.203a.271.271 0 0 1 .203-.074h1.225c.087 0 .155.024.205.074a.275.275 0 0 1 .074.203v.52c0 .037.012.062.037.074.023.013.043.007.055-.019.52-.655 1.299-.982 2.338-.982 1.014 0 1.819.293 2.412.88zM78.087 7.353a.275.275 0 0 1-.204.074H75.99c-.062 0-.092.031-.092.093v4.842c0 .532.113.909.343 1.132.229.223.597.334 1.104.334h.445c.087 0 .155.025.204.074a.28.28 0 0 1 .074.204v.965c0 .174-.093.272-.278.297l-.761.019c-.952 0-1.664-.167-2.133-.501-.471-.334-.705-.958-.705-1.874V7.52c0-.062-.031-.093-.094-.093h-1.02a.274.274 0 0 1-.204-.074.272.272 0 0 1-.074-.204V6.24c0-.086.024-.154.074-.203a.274.274 0 0 1 .204-.074h1.02c.062 0 .094-.031.094-.093V3.792c0-.087.024-.154.074-.204a.271.271 0 0 1 .203-.074h1.15c.087 0 .154.024.205.074.049.05.074.117.074.204V5.87c0 .062.03.093.092.093h1.893c.086 0 .154.024.204.074.05.049.074.117.074.203v.909a.268.268 0 0 1-.073.204zM86.714 12.863c.062-.111.13-.167.204-.167.062 0 .117.019.166.056l.762.464c.099.062.148.143.148.241l-.037.148a3.627 3.627 0 0 1-1.42 1.429c-.611.347-1.326.52-2.143.52-.878 0-1.62-.194-2.227-.584-.605-.39-1.063-.949-1.372-1.68-.31-.754-.464-1.639-.464-2.652 0-.903.068-1.589.204-2.06.223-.854.667-1.527 1.335-2.022.668-.494 1.479-.741 2.431-.741 1.175 0 2.071.306 2.69.918.618.612 1.02 1.5 1.205 2.662.062.458.105 1.015.131 1.67 0 .186-.094.278-.279.278h-5.861c-.062 0-.094.03-.094.093.025.47.068.804.131 1.001.135.495.408.885.816 1.169.408.285.914.427 1.521.427 1.002-.013 1.72-.403 2.153-1.17zm-3.738-5.12c-.341.26-.572.619-.696 1.076a4.33 4.33 0 0 0-.166 1.039c0 .062.03.093.092.093h4.212c.062 0 .093-.031.093-.093-.025-.408-.062-.711-.111-.909a2.107 2.107 0 0 0-.732-1.159c-.365-.291-.82-.437-1.364-.437-.544 0-.989.13-1.328.39zM97.658 6.713c.594.588.891 1.382.891 2.384v6.029a.272.272 0 0 1-.074.204.271.271 0 0 1-.203.074h-1.225a.274.274 0 0 1-.204-.074.272.272 0 0 1-.074-.204V9.45c0-.618-.18-1.119-.538-1.503-.359-.383-.835-.575-1.429-.575-.532 0-.979.158-1.345.474-.366.316-.578.739-.641 1.271v6.011a.272.272 0 0 1-.074.204.271.271 0 0 1-.203.074h-1.225a.272.272 0 0 1-.204-.074.272.272 0 0 1-.074-.204V6.24c0-.086.024-.154.074-.203a.272.272 0 0 1 .204-.074h1.225c.086 0 .154.024.203.074.05.049.074.117.074.203v.52c0 .037.013.062.037.074.025.013.043.007.057-.019.52-.655 1.299-.982 2.337-.982 1.015 0 1.818.293 2.411.88zM107.381 2.493a.275.275 0 0 1 .203-.074h1.225a.28.28 0 0 1 .204.074c.05.05.074.118.074.204v12.43a.272.272 0 0 1-.074.204.275.275 0 0 1-.204.074h-1.225a.271.271 0 0 1-.203-.074c-.051-.049-.074-.117-.074-.204v-.482c0-.037-.014-.062-.037-.074-.025-.012-.051-.006-.074.019-.273.31-.592.548-.956.715-.364.166-.764.25-1.196.25-.891 0-1.63-.22-2.217-.658-.588-.439-1.018-1.061-1.289-1.865-.223-.618-.334-1.409-.334-2.374 0-.903.092-1.651.277-2.245.26-.816.689-1.453 1.289-1.911.6-.457 1.357-.686 2.273-.686.433 0 .832.08 1.196.241.364.16.683.396.956.704.023.025.049.034.074.028.023-.006.037-.028.037-.065V2.699c.001-.088.024-.157.075-.206zm-.094 8.181c0-1.015-.16-1.806-.482-2.375-.358-.631-.884-.946-1.576-.946-.718 0-1.268.297-1.651.891-.396.619-.594 1.435-.594 2.449 0 .952.155 1.719.464 2.3.358.681.952 1.021 1.781 1.021.705 0 1.242-.334 1.613-1.002.297-.545.445-1.324.445-2.338zM116.656 15.331a.272.272 0 0 1-.074-.204V2.697c0-.086.024-.154.074-.204a.275.275 0 0 1 .203-.074h1.244c.148 0 .26.062.334.186l3.116 4.972c.037.074.074.074.111 0l3.136-4.972a.366.366 0 0 1 .334-.186h1.242a.28.28 0 0 1 .204.074c.05.05.074.118.074.204v12.43a.272.272 0 0 1-.074.204.275.275 0 0 1-.204.074h-1.225a.271.271 0 0 1-.203-.074c-.051-.049-.074-.117-.074-.204V5.703c0-.05-.014-.077-.037-.084-.025-.006-.051.01-.074.047l-2.523 4.118a.365.365 0 0 1-.334.186h-.594a.365.365 0 0 1-.334-.186l-2.504-4.118c-.025-.037-.051-.053-.074-.047-.025.007-.037.034-.037.084v9.424a.276.276 0 0 1-.074.204.278.278 0 0 1-.205.074h-1.225a.275.275 0 0 1-.203-.074zM136.061 12.863c.062-.111.131-.167.205-.167a.27.27 0 0 1 .166.056l.761.464c.099.062.148.143.148.241l-.037.148a3.631 3.631 0 0 1-1.419 1.429c-.612.347-1.326.52-2.143.52-.879 0-1.621-.194-2.227-.584-.606-.39-1.064-.949-1.373-1.68-.309-.754-.463-1.639-.463-2.652 0-.903.067-1.589.203-2.06.223-.854.668-1.527 1.336-2.022.668-.494 1.479-.741 2.43-.741 1.176 0 2.072.306 2.691.918.617.612 1.02 1.5 1.205 2.662a17.8 17.8 0 0 1 .13 1.67c0 .186-.093.278-.278.278h-5.862c-.062 0-.093.03-.093.093.025.47.068.804.13 1.001.136.495.408.885.816 1.169.408.285.915.427 1.521.427 1.002-.013 1.72-.403 2.153-1.17zm-3.739-5.12c-.34.26-.572.619-.695 1.076a4.325 4.325 0 0 0-.167 1.039c0 .062.03.093.093.093h4.211c.062 0 .094-.031.094-.093-.025-.408-.062-.711-.111-.909a2.114 2.114 0 0 0-.733-1.159c-.364-.291-.819-.437-1.364-
+        .437-.545 0-.988.13-1.328.39zM147.006 6.713c.594.588.891 1.382.891 2.384v6.029a.272.272 0 0 1-.074.204.271.271 0 0 1-.203.074h-1.225a.274.274 0 0 1-.204-.074.272.272 0 0 1-.074-.204V9.45c0-.618-.18-1.119-.538-1.503-.359-.383-.835-.575-1.429-.575-.532 0-.979.158-1.345.474-.366.316-.578.739-.641 1.271v6.011a.272.272 0 0 1-.074.204.271.271 0 0 1-.203.074h-1.225a.272.272 0 0 1-.204-.074.272.272 0 0 1-.074-.204V6.24c0-.086.024-.154.074-.203a.272.272 0 0 1 .204-.074h1.225c.086 0 .154.024.203.074.05.049.074.117.074.203v.52c0 .037.013.062.037.074.025.013.043.007.057-.019.52-.655 1.299-.982 2.337-.982 1.014 0 1.818.293 2.411.88zM155.484 7.353a.272.272 0 0 1-.204.074h-1.892c-.062 0-.094.031-.094.093v4.842c0 .532.115.909.344 1.132.229.223.596.334 1.104.334h.445a.28.28 0 0 1 .204.074c.05.05.074.118.074.204v.965c0 .174-.093.272-.278.297l-.761.019c-.952 0-1.663-.167-2.134-.501-.47-.334-.705-.958-.705-1.874V7.52c0-.062-.03-.093-.092-.093h-1.021a.272.272 0 0 1-.204-.074.272.272 0 0 1-.074-.204V6.24c0-.086.024-.154.074-.203a.272.272 0 0 1 .204-.074h1.021c.062 0 .092-.031.092-.093V3.792c0-.087.025-.154.074-.204a.276.276 0 0 1 .205-.074h1.15c.086 0 .154.024.203.074.05.05.074.117.074.204V5.87c0 .062.031.093.094.093h1.892c.087 0 .155.024.204.074a.275.275 0 0 1 .074.203v.909a.268.268 0 0 1-.073.204zM159.463 14.858c-.674-.464-1.146-1.11-1.418-1.939-.223-.667-.334-1.422-.334-2.263 0-.878.104-1.62.314-2.227.271-.816.748-1.456 1.429-1.92.681-.464 1.49-.695 2.431-.695.891 0 1.666.231 2.328.695.661.464 1.135 1.098 1.419 1.901.223.631.334 1.373.334 2.227 0 .865-.111 1.626-.334 2.281-.272.829-.742 1.476-1.409 1.939-.668.464-1.454.695-2.357.695-.928.001-1.729-.23-2.403-.694zm3.701-1.262c.371-.278.637-.671.799-1.179.135-.47.203-1.051.203-1.743 0-.692-.062-1.268-.186-1.726-.16-.507-.426-.899-.797-1.178-.371-.279-.823-.418-1.355-.418-.507 0-.945.14-1.316.418-.371.278-.637.671-.798 1.178-.136.433-.204 1.008-.204 1.726 0 .717.068 1.299.204 1.743.148.508.411.9.788 1.179.377.279.832.417 1.363.417a2.1 2.1 0 0 0 1.299-.417zM173.888 6.073c.136.074.186.192.148.353l-.26 1.206c-.013.124-.074.186-.186.186a.458.458 0 0 1-.148-.019 1.989 1.989 0 0 0-.631-.093c-.124 0-.216.007-.278.019-.582.025-1.061.226-1.438.604-.377.377-.566.869-.566 1.475v5.324a.272.272 0 0 1-.074.204.271.271 0 0 1-.203.074h-1.225a.272.272 0 0 1-.204-.074.272.272 0 0 1-.074-.204V6.24c0-.086.024-.154.074-.203a.272.272 0 0 1 .204-.074h1.225c.086 0 .154.024.203.074.05.049.074.117.074.203v.854c0 .05.01.078.028.084.018.006.04-.01.065-.047.557-.841 1.311-1.261 2.263-1.261.372 0 .706.067 1.003.203z"/></g><path d="M24.762 12.167a.756.756 0 0 1-.307-.065l-6.438-2.883a.751.751 0 0 1 0-1.37l6.438-2.873a.752.752 0 0 1 .991.379.752.752 0 0 1-.38.991l-4.905 2.189 4.906 2.197a.75.75 0 0 1-.305 1.435z" fill="#67BECE"/><path d="M15.988 22.626c-7.078 0-13.266-4.778-15.045-11.62a.749.749 0 1 1 1.451-.378 14.044 14.044 0 0 0 13.594 10.498.75.75 0 0 1 0 1.5z" fill="#3F54A3"/><path d="M13.404 16.398a.75.75 0 0 1-.75-.75V1.391a.75.75 0 0 1 1.5 0v14.257a.75.75 0 0 1-.75.75z" fill="#67BECE"/><g fill="#F9C7C5"><path d="M41.71 24.798a.744.744 0 0 1-.53-.22l-3.273-3.274-3.273 3.273a.75.75 0 1 1-1.061-1.061l3.804-3.804a.749.749 0 0 1 1.06 0l3.804 3.805a.75.75 0 0 1-.531 1.281z"/><path d="M49.316 24.798a.746.746 0 0 1-.53-.22l-3.273-3.274-3.272 3.273a.75.75 0 1 1-1.061-1.061l3.803-3.804a.773.773 0 0 1 1.061 0l3.804 3.805a.75.75 0 0 1-.532 1.281z"/><path d="M56.924 24.798a.746.746 0 0 1-.531-.22l-3.272-3.274-3.273 3.273a.75.75 0 1 1-1.061-1.061l3.804-3.804a.75.75 0 0 1 1.06 0l3.803 3.805a.75.75 0 0 1-.53 1.281z"/><path d="M64.529 24.798a.744.744 0 0 1-.529-.22l-3.273-3.274-3.273 3.273a.75.75 0 1 1-1.061-1.061l3.803-3.804a.773.773 0 0 1 1.061 0l3.805 3.805a.75.75 0 0 1-.533 1.281z"/><path d="M72.137 24.798a.746.746 0 0 1-.53-.22l-3.274-3.274-3.271 3.273a.75.75 0 1 1-1.061-1.061l3.803-3.804a.773.773 0 0 1 1.061 0l3.804 3.805a.75.75 0 0 1-.532 1.281z"/><g><path d="M79.743 24.798a.744.744 0 0 1-.53-.22l-3.273-3.274-3.272 3.273a.75.75 0 1 1-1.061-1.061l3.803-3.804a.773.773 0 0 1 1.061 0l3.804 3.805a.75.75 0 0 1-.532 1.281z"/><path d="M87.35 24.798a.746.746 0 0 1-.53-.22l-3.273-3.274-3.272 3.273a.75.75 0 1 1-1.061-1.061l3.803-3.804a.773.773 0 0 1 1.061 0l3.804 3.805a.75.75 0 0 1-.532 1.281z"/><path d="M94.957 24.798a.746.746 0 0 1-.531-.22l-3.272-3.274-3.273 3.273a.75.75 0 1 1-1.061-1.061l3.804-3.804a.75.75 0 0 1 1.06 0l3.803 3.805a.75.75 0 0 1-.53 1.281z"/><path d="M102.562 24.798a.744.744 0 0 1-.529-.22l-3.273-3.274-3.273 3.273a.75.75 0 1 1-1.061-1.061l3.804-3.804a.749.749 0 0 1 1.06 0l3.804 3.805a.75.75 0 0 1-.532 1.281z"/><path d="M110.17 24.798a.746.746 0 0 1-.53-.22l-3.273-3.274-3.272 3.273a.75.75 0 1 1-1.061-1.061l3.803-3.804a.75.75 0 0 1 1.06 0l3.804 3.805a.75.75 0 0 1-.531 1.281z"/></g></g></g></svg></a>
+      </div>
+      <div class="rightSide">
+        <div class="menu">
+          <ul type="none">
+            <li><a href="#">CHALLENGES</a></li>
+            <li><a href="#">SOLUTIONS</a></li>
+            <li><a href="#">RESOURCES</a></li>
+            <li>
+              <a href="#">UNLOCK <span>PRO</span></a>
+            </li>
+            <li><a href="#">HIRE DEVELOPERS</a></li>
+          </ul>
+        </div>
+       
+          <div class="gitButton">
+            <p>Login With GitHub</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+           </svg>
+          </div>
+      
+      </div>
+    </header>
+
+    <!--under menu section-->
+    <div class="underManu fixed">
+      <div class="challange">
+        <p>CHALlANGE</p>
+      </div>
+    </div>
+
+    <!--first section-->
+    <section class="firstBox">
+      <div class="container">
+        <div class="holderBox">
+          <div class="leftSide1">
+            <div class="frontImg">
+              <a href="#"> <img src="images/alno0v75fow4xueknwtu.jpg" /></a>
+            </div>
+            <div class="twoButtons">
+              <div class="firstButton">
+                <p>DESKTOP DESIGN</p>
+              </div>
+              <div class="secondButton">
+                <p>MOBILE DESIGN</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rightSide1">
+            <div class="itemButtons">
+              <div class="leftItems">
+                <div class="free">
+                  <p>FREE</p>
+                </div>
+                <div class="html">
+                  <p>HTML</p>
+                </div>
+                <div class="css">
+                  <p>CSS</p>
+                </div>
+              </div>
+
+              <div class="rightItems">
+                <div class="number">
+                  <p>2</p>
+                </div>
+                <div class="junior">
+                  <p>JUNIOR</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="intro">
+              <div class="heading">
+                <h2>Fylo landing page with two column layout</h2>
+                <p>
+                  This project is great if you're starting to get confident with
+                  slightly more complex layouts. The second section with the
+                  testimonial area will provide a nice challenge.
+                </p>
+              </div>
+              <div class="assets">
+                <p>ASSETS PROVIDED</p>
+                <div class="cross">
+                  <div class="crossImg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="red" class="bi bi-x-lg" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                      <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                    </svg>
+                  </div>
+                  <div class="crossText">
+                    <p>Sketch and Figma design file access - Unlock with PRO</p>
+                  </div>
+                </div>
+                <div class="cross">
+                  <div class="crossImg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="green" class="bi bi-check-lg" viewBox="0 0 16 16">
+                      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                    </svg>
+                  </div>
+                  <div class="crossText">
+                    <p>JPEG design files for mobile & desktop layouts</p>
+                  </div>
+                </div>
+                <div class="cross">
+                  <div class="crossImg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="green" class="bi bi-check-lg" viewBox="0 0 16 16">
+                      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                    </svg>                  </div>
+                  <div class="crossText">
+                    <p>Style guide for fonts, colors, etc</p>
+                  </div>
+                </div>
+                <div class="cross">
+                  <div class="crossImg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="green" class="bi bi-check-lg" viewBox="0 0 16 16">
+                      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                    </svg>
+                  </div>
+                  <div class="crossText">
+                    <p>Optimized image assets</p>
+                  </div>
+                </div>
+                <div class="cross">
+                  <div class="crossImg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="green" class="bi bi-check-lg" viewBox="0 0 16 16">
+                      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                    </svg>
+                  </div>
+                  <div class="crossText">
+                    <p>README file to help you get started</p>
+                  </div>
+                </div>
+                <div class="cross">
+                  <div class="crossImg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="green" class="bi bi-check-lg" viewBox="0 0 16 16">
+                      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                    </svg>
+                  </div>
+                  <div class="crossText">
+                    <p>HTML file with pre-written content</p>
+                  </div>
+                </div>
+                                      
+              </div>
+
+              <div class="startChallange">
+                <p>START CHALLANGE (FREE)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--second section-->
+    <section class="secondSection">
+      <div class="container">
+        <div class="simpleDiv">
+          <h3>CHALLENGE</h3>
+        </div>
+
+        <div class="leftText">
+          <h3 class="h3text">Brief</h3>
+          <p>
+            Your challenge is to build out this landing page and get it looking
+            as close to the design as possible.
+          </p>
+
+          <p>
+            You can use any tools you like to help you complete the challenge.
+            So if you've got something you'd like to practice, feel free to give
+            it a go.
+          </p>
+
+          <p>Your users should be able to:</p>
+          <ul>
+            <li>
+              View the optimal layout for the site depending on their device's
+              screen size
+            </li>
+            <li>See hover states for all interactive elements on the page</li>
+          </ul>
+          <p>
+            Download the starter code and go through the
+            <span class="grey">README.md</span>
+            file. This will provide further details about the project. The
+            <span class="grey">style-guide.md</span> file is where you'll find
+            colors, fonts, etc.
+          </p>
+          <p>
+            Want some support on the challenge?<a href="#">
+              Join our Slack community
+            </a>
+            ask questions in the help channel.
+          </p>
+          <div class="startChallange1">
+            <p>START CHALLANGE (FREE)</p>
+          </div>
+        </div>
+
+        <div class="rightText">
+          <h3 class="h3text">Getting started</h3>
+          <ol>
+            <li>Download the starter code</li>
+            <li>Set up the project with version control (e.g. Git)</li>
+            <li>Read the <spam class="grey">README.md</spam> file and have a look around the project</li>
+            <li>Get colors, fonts etc from the <spam class="grey">style-guide.md<spam></spam> file</li>
+            <li>Set up your project/file architecture however you want</li>
+            <li>Start coding!</li>
+          </ol>
+          <h3 class="h3text">Ideas to test yourself</h3>
+          <ul>
+            <li>
+              Write your styles using a pre-processor, such as <a href="#">Sass</a>, <a href="#">Less</a> or
+              <a href="#">Stylus</a>
+            </li>
+            <li>Try using Flexbox and Grid for layout</li>
+            <li>Practice working in a team by building with friends</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--Section FAQ-->
+    <section class="faq">
+      <div class="container">
+        <div class="faqHeading">
+          <h3>CHALLENGE FAQS</h3>
+        </div>
+        <div class="question">
+          <div class="questionRow">
+            <p>Can I use libraries/frameworks on these projects?</p>
+          </div>
+          <div class="plus">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="questionRow">
+            <p>How can I get help if I'm stuck on a challenge?</p>
+          </div>
+          <div class="plus">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="questionRow">
+            <p>Can I use these projects in my portfolio?</p>
+          </div>
+          <div class="plus">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="questionRow">
+            <p>Is there an official solution I can take a look at?</p>
+          </div>
+          <div class="plus">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="questionRow">
+            <p>Do I get a code review when I post my solution?</p>
+          </div>
+          <div class="plus">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="questionRow">
+            <p>How do I submit my solution?</p>
+          </div>
+          <div class="plus">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="questionRow">
+            <p>Can I use these challenges within my own free or commercial content/tutorials/projects?</p>
+          </div>
+          <div class="plus">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--overlay section-->
+    <section class="bluePart">
+      <div class="backgroundImg">
+        <?xml version="1.0" encoding="utf-8"?>
+        <!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 622.3 254.4" style="enable-background:new 0 0 622.3 254.4;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M221.5,161.5l6.2-14.4c6.7,5,15.6,7.6,24.4,7.6c6.5,0,10.6-2.5,10.6-6.3c-0.1-10.6-38.9-2.3-39.2-28.9
+			c-0.1-13.5,11.9-23.9,28.9-23.9c10.1,0,20.2,2.5,27.4,8.2l-5.8,14.7c-6.6-4.2-14.8-7.2-22.6-7.2c-5.3,0-8.8,2.5-8.8,5.7
+			c0.1,10.4,39.2,4.7,39.6,30.1c0,13.8-11.7,23.5-28.5,23.5C241.4,170.6,230.1,167.7,221.5,161.5"/>
+		<path class="st0" d="M459.4,141.9c-3.1,5.4-8.9,9.1-15.6,9.1c-9.9,0-17.9-8-17.9-17.9s8-17.9,17.9-17.9c6.7,0,12.5,3.7,15.6,9.1
+			l17.1-9.5c-6.4-11.4-18.7-19.2-32.7-19.2c-20.7,0-37.5,16.8-37.5,37.5c0,20.7,16.8,37.5,37.5,37.5c14.1,0,26.3-7.7,32.7-19.2
+			L459.4,141.9z"/>
+		<rect x="290.8" y="64.5" class="st0" width="21.4" height="104.7"/>
+		<polygon class="st0" points="484.9,64.5 484.9,169.2 506.3,169.2 506.3,137.8 531.7,169.2 559.1,169.2 526.8,131.9 556.7,97.1 
+			530.5,97.1 506.3,126 506.3,64.5 		"/>
+		<path class="st0" d="M375.8,142.1c-3.1,5.1-9.5,8.9-16.7,8.9c-9.9,0-17.9-8-17.9-17.9s8-17.9,17.9-17.9c7.2,0,13.6,4,16.7,9.2
+			V142.1z M375.8,97.1v8.5c-3.5-5.9-12.2-10-21.3-10c-18.8,0-33.6,16.6-33.6,37.4c0,20.8,14.8,37.6,33.6,37.6
+			c9.1,0,17.8-4.1,21.3-10v8.5h21.4v-72H375.8z"/>
+	</g>
+	<g>
+		<g>
+			<path class="st0" d="M89.2,142c0,7.3-5.9,13.2-13.2,13.2s-13.2-5.9-13.2-13.2s5.9-13.2,13.2-13.2h13.2V142z"/>
+			<path class="st0" d="M95.8,142c0-7.3,5.9-13.2,13.2-13.2s13.2,5.9,13.2,13.2V175c0,7.3-5.9,13.2-13.2,13.2s-13.2-5.9-13.2-13.2
+				V142z"/>
+		</g>
+		<g>
+			<path class="st0" d="M109,89c-7.3,0-13.2-5.9-13.2-13.2c0-7.3,5.9-13.2,13.2-13.2s13.2,5.9,13.2,13.2V89H109z"/>
+			<path class="st0" d="M109,95.7c7.3,0,13.2,5.9,13.2,13.2c0,7.3-5.9,13.2-13.2,13.2H75.9c-7.3,0-13.2-5.9-13.2-13.2
+				c0-7.3,5.9-13.2,13.2-13.2H109z"/>
+		</g>
+		<g>
+			<path class="st0" d="M161.9,108.9c0-7.3,5.9-13.2,13.2-13.2s13.2,5.9,13.2,13.2c0,7.3-5.9,13.2-13.2,13.2h-13.2V108.9z"/>
+			<path class="st0" d="M155.3,108.9c0,7.3-5.9,13.2-13.2,13.2s-13.2-5.9-13.2-13.2V75.8c0-7.3,5.9-13.2,13.2-13.2
+				s13.2,5.9,13.2,13.2V108.9z"/>
+		</g>
+		<g>
+			<path class="st0" d="M142.1,161.8c7.3,0,13.2,5.9,13.2,13.2c0,7.3-5.9,13.2-13.2,13.2s-13.2-5.9-13.2-13.2v-13.2H142.1z"/>
+			<path class="st0" d="M142.1,155.2c-7.3,0-13.2-5.9-13.2-13.2s5.9-13.2,13.2-13.2h33.1c7.3,0,13.2,5.9,13.2,13.2
+				s-5.9,13.2-13.2,13.2H142.1z"/>
+		</g>
+	</g>
+</g>
+        </svg>
+        <h2>JOIN OUR SLACK COMMUNITY</h2>
+        <h4>Join over 100,000 people taking the challenges, talking about their code, helping each other, and chatting about all things front-end!</h4>
+        <div class="inputHolder">
+          <div class="input">
+            <input type="text" id="email" name="email" placeholder="email@example.com">
+          </div>
+          <div class="inputAlign">
+           <button class="inputButton">REQUEST INVITE</button>
+          </div>
+        </div> 
+
+        </div>
+      </div>
+    </section>
+
+    <!--Subscribe Section-->
+    <section class="subscribe">
+      <div class="subscribeHolder">
+        <div class="subscribeText">
+          <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+          <h2>Stay up-to-date with new challenges, featured solutions,
+             selected articles and Frontend Mentor latest news</h2>
+          <div class="formaHolder">  
+            <input type="checkbox" id="agree" name="agree" value="agree" />
+              <label for="agree">I am happy for Frontend Mentor to contact me by email</label>
+          </div>
+            <div class="inputHolder1">
+              <div class="input1">
+                <input type="text" id="email" name="email" placeholder="email@example.com">
+              </div>
+              <div class="inputAlign1">
+               <button class="inputButton add">SUBSCRIBE</button>
+              </div>
+            </div> 
+        </div>
+
+        <div class="subscribeImg">
+          <svg width="364" height="301" class="sredina" xmlns="http://www.w3.org/2000/svg"><g stroke="#3F54A3" fill="none" fill-rule="evenodd"><path stroke-width="3" stroke-linecap="round" d="M1.5 236.5h361v12H1.5z"/><g stroke-linecap="round" stroke-width="3"><path d="M10.5 248.5h27v8h-27zM16.5 299v-42.5h15V299"/></g><g stroke-linecap="round" stroke-width="3"><path d="M326.5 248.5h27v8h-27zM332.5 299v-42.5h15V299"/></g><path d="M261.643 236.606s-33.73-39.106-2.878-108.106H290M287.117 236.391s33.659-38.451 2.805-108.106M277.014 128.284s22.67-71.456-42.689-96.117M267.771 128.284s-3.547-55.006 41.219-55.006M273.359 127.98s17.358-62.91-53.902-77.078" stroke-width="3" stroke-linecap="round"/><g fill="#FFF" fill-rule="nonzero" stroke-linecap="round" stroke-width="3"><path d="M99.5 114.5h163v113h-163z"/><path d="M105.5 121.5h151v100h-151zM92.5 227.5h177v9h-177z"/><path d="M165.5 227.5h32v5h-32z"/></g><path stroke-width="3" stroke-linecap="round" d="M42.5 62.5h38v37h-38zM126.984 95.982L87.5 99.316V62.5h37.4z"/><path d="M105 128.5h150M144.5 128v94M128.5 121.5h31v7h-31z"/><path d="M148 135.5h2M152 135.5h2M148 137.5h2M154 137.5h18M148 139.5h2M154 139.5h9M148 141.5h2M154 141.5h15M148 143.5h2M152 143.5h2M148 145.5h2M154 145.5h6M148 147.5h2M154 147.5h6M148 149.5h2M152 149.5h2M148 151.5h2M154 151.5h30M148 153.5h2M154 153.5h7M148 155.5h2M154 155.5h26M148 157.5h2M154 157.5h28M148 159.5h2M152 159.5h2M148 161.5h2M154 161.5h25M148 163.5h2M152 163.5h2M148 165.5h2M154 165.5h11M148 167.5h2M154 167.5h8M148 169.5h2M154 169.5h11M148 171.5h2M152 171.5h2" stroke-linecap="round"/><g transform="translate(291 45)" stroke-linecap="round" stroke-width="3"><circle cx="24.044" cy="28.197" r="6.117"/><path d="M24.254 21.199c17.71-9.625 0-20.699 0-20.699h-.129s-17.71 11.024 0 20.65"/><path d="M15.525 26.212C21.243 6.884.944 11.631.944 11.631l-.091.091s-4.756 20.29 14.574 14.574M32.352 26.212C26.634 6.884 46.933 11.631 46.933 11.631l.091.091s4.756 20.29-14.574 14.574M24.254 34.784c17.71 9.625 0 20.716 0 20.716h-.129s-17.71-11.033 0-20.658"/><path d="M15.525 29.755C21.243 49.083.944 44.336.944 44.336l-.091-.091s-4.756-20.29 14.574-14.574M32.352 29.755c-5.718 19.328 14.581 14.581 14.581 14.581l.091-.091s4.756-20.29-14.574-14.574"/></g><g transform="translate(204 1)" fill="#FFF" fill-rule="nonzero" stroke-linecap="round" stroke-width="3"><circle cx="24.044" cy="28.197" r="6.117"/><path d="M24.254 21.199c17.71-9.625 0-20.699 0-20.699h-.129s-17.71 11.024 0 20.65"/><path d="M15.525 26.212C21.243 6.884.944 11.631.944 11.631l-.091.091s-4.756 20.29 14.574 14.574M32.352 26.212C26.634 6.884 46.933 11.631 46.933 11.631l.091.091s4.756 20.29-14.574 14.574M24.254 34.784c17.71 9.625 0 20.716 0 20.716h-.129s-17.71-11.033 0-20.658"/><path d="M15.525 29.755C21.243 49.083.944 44.336.944 44.336l-.091-.091s-4.756-20.29 14.574-14.574M32.352 29.755c-5.718 19.328 14.581 14.581 14.581 14.581l.091-.091s4.756-20.29-14.574-14.574"/></g><g transform="translate(188 21)" fill="#FFF" fill-rule="nonzero" stroke-linecap="round" stroke-width="3"><circle cx="24.044" cy="28.197" r="6.117"/><path d="M24.254 21.199c17.71-9.625 0-20.699 0-20.699h-.129s-17.71 11.024 0 20.65"/><path d="M15.525 26.212C21.243 6.884.944 11.631.944 11.631l-.091.091s-4.756 20.29 14.574 14.574M32.352 26.212C26.634 6.884 46.933 11.631 46.933 11.631l.091.091s4.756 20.29-14.574 14.574M24.254 34.784c17.71 9.625 0 20.716 0 20.716h-.129s-17.71-11.033 0-20.658"/><path d="M15.525 29.755C21.243 49.083.944 44.336.944 44.336l-.091-.091s-4.756-20.29 14.574-14.574M32.352 29.755c-5.718 19.328 14.581 14.581 14.581 14.581l.091-.091s4.756-20.29-14.574-14.574"/></g></g></svg>
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <!--Footer Section-->
+    <section class="footer">
+      <div class="threeColumn">  
+          <div class="intro1">
+            <h2>FRONTEND MENTOR</h2>
+            <p>Gain real experience of building websites and providing code reviews.
+               Build your portfolio and help others achieve their goals.</p>
+          </div>  
+          <div class="linkItem">
+            <h2>EXPLORE</h2>
+            <a href="#">Challenges</a>
+            <a href="#">Solutions</a>
+            <a href="#">Resources</a>
+            <a href="#">Unlock PRO</a>
+            <a href="#">Hire Developers</a>
+          </div>
+          <div class="linkItem">
+            <h2>COMMUNITY</h2>
+            <a href="#">Contact Us</a>
+            <a href="#">Slack</a>
+            <a href="#">FAQs</a>
+            <a href="#">Guidelines</a>
+            <a href="#">Blog</a>
+          </div>
+          <div class="socialMedia">
+            <ul>
+              <li>
+                <a href="#" class="lightBlueLink">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="lightBlue" width="26" height="26" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                  </svg> 
+                </a>  
+              </li>
+              <li>
+                <a href="#" class="darkBlueLink">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="darkBlue" width="26" height="26" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                  </svg>
+                </a>  
+              </li>
+              <li>
+                <a href="#" class="darkBlueLinkF">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="darkBlueF" width="26" height="26" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                  </svg>
+                </a>  
+              </li>
+            </ul>
+
+          </div>
+      </div>
+    </section>
+    <hr>
+
+    <!--Last Section-->
+    <div class="lastPart">
+      <div class="copyRight">
+        <span>©Frontend Mentor 2019 - 2022</span>
+      </div>
+      <div class="terms">
+        <ul>
+          <a href="#"><li>Terms</li></a>
+          <a href="#"><li>Cookie Policy</li></a>
+          <a href="#"><li>Privacy Policy</li></a>
+          <a href="#"><li>License</li></a>
+        </ul>
+      </div>
+
+    </div>
+  </body>
+</html>
